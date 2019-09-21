@@ -1,0 +1,4 @@
+\frametitle{Plotted Figure}
+\begin{figure}
+\includegraphics[width=12cm,height=8cm]{./figs/Ellipse2.png}
+\end{figure}

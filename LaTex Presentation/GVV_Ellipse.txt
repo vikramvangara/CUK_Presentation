@@ -1,0 +1,51 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+n1 = np.array([1,0])
+n2 = np.array([0,16])
+c = 16
+
+n = (n1,n2)
+
+a = np.sqrt(c/n1[0])
+b = np.sqrt(c/n2[1])
+
+a2 = 16
+b2 = np.sqrt(16/15)
+
+theta = np.linspace(0,2*np.pi,200)
+O = np.array([0,0])
+
+A = np.array([a,b])
+B = np.array([a,-b])
+C = np.array([-a,-b])
+D = np.array([-a,b])
+
+
+plt.plot([A[0],B[0]],[A[1],B[1]],'b')
+plt.plot([A[0],D[0]],[A[1],D[1]],'b')
+plt.plot([B[0],C[0]],[B[1],C[1]],'b')
+plt.plot([C[0],D[0]],[C[1],D[1]],'b')
+
+plt.plot([A[0],B[0]],[A[1],B[1]],'o')
+plt.plot([A[0],D[0]],[A[1],D[1]],'o')
+plt.plot([B[0],C[0]],[B[1],C[1]],'o')
+plt.plot([C[0],D[0]],[C[1],D[1]],'o')
+
+
+x1 = a*np.cos(theta)
+y1 = b*np.sin(theta)
+
+x2 = a2*np.cos(theta)
+y2 = b2*np.sin(theta)
+
+plt.plot(O[0],O[1],'ro')
+plt.text(O[0]+0.1,O[1]-0.2,"O")
+
+
+plt.plot(x1,y1,'g')
+plt.plot(x2,y2)
+plt.plot([16],[0],'o')
+plt.grid()
+plt.axis("equal")
+plt.show()

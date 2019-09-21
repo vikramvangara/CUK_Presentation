@@ -1,0 +1,8 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Vertices of Rectangle}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Finding the equation of outer Ellipse}{5}{0}{2}
+\beamer@sectionintoc {4}{C code for computation}{7}{0}{3}
+\beamer@sectionintoc {5}{C code for saving data in files}{10}{0}{4}
+\beamer@sectionintoc {6}{Python Code for plotting}{14}{0}{5}
+\beamer@sectionintoc {7}{Plotted Figure}{17}{0}{6}
